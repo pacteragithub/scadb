@@ -1,0 +1,67 @@
+Request Body:
+{"allRuleIds":["235", "234", "236"], "id": "2d6f0b92-2165-477a-8dd1-71a57ba2e67a", "list":[
+{"ruleIdList":["279"], "data":[
+{"id": "235", "beginTime": 0, "endTime": 2377, "channe
+lId":1,"status":"finish","emotionValue":null,"text":"ι������"},{"id":"5b3b40e45453479ab4a90d750dc8a284","beginTime":1760,"endTime":5335,"channelId":2,"status":"fin
+ish","emotionValue":null,"text":"ιι���"}]},{"ruleIdList":["281","280"],"data":[{"id":"236","beginTime":9060,"endTime":10779,"channelId":1,"status":"finish","emot
+ionValue":null,"text":"�ǵ�"},{"id":"5b3b40e45453479ab4a90d750dc8a284","beginTime":12940,"endTime":17725,"channelId":2,"status":"finish","emotionValue":null,"text":
+"������������������"
+}
+]}, {"ruleIdList":["292"], "data":[
+{"id": "241", "beginTime": 13782, "endTime": 15678, "channelId": 1, "status": "finish", "emotionValue": null, "text": "����"}
+]}, {"ruleIdList":["278"], "data":[
+{"id": "237", "beginTime": 21031, "endTime": 23391, "channelId": 1, "status": "finish", "emotionValue": null, "text": "���������"},{
+"id
+":"5b3b40e45453479ab4a90d750dc8a284","beginTime":25800,"endTime":28135,"channelId":2,"status":"finish","emotionValue":null,"text":"���"}]},{"ruleIdList":["284","28
+3","282"],"data":[{"id":"238","beginTime":26395,"endTime":28827,"channelId":1,"status":"finish","emotionValue":null,"text":"������ȶ�"},{"id":"5b3b40e45453479ab4a9
+0d750dc8a284","beginTime":31150,"endTime":33665,"channelId":2,"status":"finish","emotionValue":null,"text":"�ҿ���ΪΪ��"}]},{"ruleIdList":["287","286","285"],"data
+":[{"id":"239","beginTime":31579,"endTime":33926,"channelId":1,"status":"finish","emotionValue":null,"text":"н�ʶ���"}]},{"ruleIdList":["290","289","288"],"data":[
+{
+"id":"240", "beginTime": 37063, "endTime": 42179,"channelId": 1, "status": "finish", "emotionValue":null, "text": "\n�籣��������ɵͣ�������Ҳ�����"}, {"id":"5b3b40e45453
+479ab4a90d750dc8a284","beginTime":37800,"endTime":43445,"channelId":2,"status":"finish","emotionValue":null,"text":"�㰲���Ĳ�������"},{"id":"5b3b40e45453479ab4a90d
+750dc8a284","beginTime":45500,"endTime":51525,"channelId":2,"status":"finish","emotionValue":null,"text":"��ȥ"}]},{"ruleIdList":["291"],"data":[{"id":"242","beginT
+ime":46810,"endTime":49898,"channelId":1,"status":"finish","emotionValue":null,"text":"�õģ��ҿ��ǿ���"},{"id":"5b3b40e45453479ab4a90d750dc8a284","beginTime":54450, "endTime": 54787, "channelId": 2,"status": "finish", "emotionValue": null, "text":"��"}
+]}
+]}
+
+
+Response Body: {
+"data": {
+"businessScenario":"������ѵ", "fastSpeedCount": 0, "overtimeCount": 0,"interruptionCount": 0, "totalScore": 13.0, "questionRuleInfoList":[
+{
+"isAllQualityCheck": tru
+e, "taskId": "F63649CC-7AFB-4DCF-A471-079F8C9C9BBB","vid": "", "isFinish": true, "hitRuleInfo":[], "unHitRuleInfo":[
+{"ruleName": "ͨ��_����", "ruleComments": "����", "rid": 234
+}, {
+"ruleName": "ͨ��_����", "ruleComments": "����", "rid": 235}, {"ruleName": "ͨ��_��Ӧ��ʱ", "ruleComments": "��Ӧ��ʱ", "rid": 236}
+]}, {"isAllQualityCheck": false, "taskId": "E
+9F30CB3-2238-4130-B51D-371DE128A8B2","vid":"72e987b847254e41897710e06fb54d8a","title":"���������","id":"237","isFinish":true,"hitRuleInfo":[{"ruleName":"��Ƹ+����
+��ͨ+������������˵㣨������Щ���棩","ruleComments":"������Щ����","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":278}],"unHitRuleInfo":[]},{"isAllQualityCh
+eck":false,"taskId":"D1781770-AF25-48A9-BAA5-F807667529B2","vid":"07633efcf4a548cb9c33beb66d856ffc","title":"�ǵ�","id":"236","isFinish":true,"hitRuleInfo":[{"ruleN
+ame":"��Ƹ+������+�ǵĿ��˵�1������������ְ����","ruleComments":"��������  ��ְ���� ��Ƹ ��λ","scoreNumber":-2,"conversionScoreNumber":-8.7,"rid":280},{"ruleName
+":"��Ƹ+������+�ǵĿ��˵�2����˵�����㣩","ruleComments":"������˵��������","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":281}],"unHitRuleInfo":[]},{"isAllQu
+alityCheck":false,"taskId":"F083F9AC-D2B4-4472-B9E3-5773D96A89A7","vid":"859b58a64b3341a1bd5a3877eb6c4971","title":"ι������","id":"235","isFinish":true,"hitRuleInf
+o":[{"ruleName":"��Ƹ+������+ι���ÿ��˵㣨��˼���Լ�����","ruleComments":"��˼���� ���� ��������","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":279}],"unHit
+RuleInfo":[]},{"isAllQualityCheck":false,"taskId":"4F357AF3-1ABC-4CCB-9414-61BBA8AA8A05","vid":"c294ea8777484ebfba59f690682d6378","title":"\n�籣��������ɵͣ�����
+��Ҳ�����","id":"240","isFinish":true,"hitRuleInfo":[{"ruleName":"��Ƹ+���ι�ͨ+�籣�����������ɵͲ����ǿ��˵�1���籣������","ruleComments":"�籣������ ��
+�� ���� ����","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":288},{"ruleName":"��Ƹ+���ι�ͨ+�籣�����������ɵͲ����ǿ��˵�2�������ȣ�","ruleComments":"��
+���� ���� ��������� ����","scoreNumber":-2,"conversionScoreNumber":-8.7,"rid":289},{"ruleName":"��Ƹ+���ι�ͨ+�籣�����������ɵͲ����ǿ��˵�3�����乫���𻹿
+","ruleComments":"���乫���� ���� �ⷿ ��������˰ �Ͳ�","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":290}],"unHitRuleInfo":[]},{"isAllQualityCheck":false,
+"taskId": "82425093-427F-4012-9207-6AD64B83CD45", "vid": "b59bd96a4bee41cf9e8d81ec60dcd628","title": "������ȶ�", "id": "238", "isFinish":true, "hitRuleInfo":[
+{
+"ruleName": "��Ƹ+���ι�ͨ+������ȶ����˵�1��500ǿ֪����ҵ��", "ruleComments": "500ǿ ֪����ҵ", "scoreNumber": -1, "conversionScoreNumber": -4.35, "rid": 282}, {
+"ruleName": "��Ƹ+����
+��ͨ+������ȶ����˵�2�����ں�����","ruleComments":"���ں��� ��פ�ͻ��ֳ� �����Ŀͻ� �ܶ�","scoreNumber":-1,"conversionScoreNumber":-4.35,"rid":283},{"ruleName":"��
+Ƹ+���ι�ͨ+������ȶ����˵�3��������Σ�","ruleComments":"5 10 ���� ��� �ȶ�","scoreNumber":-2,"conversionScoreNumber":-8.7,"rid":284}],"unHitRuleInfo":[]},{"isAl
+lQualityCheck":false,"taskId":"CAC6FD2F-DD15-4B9B-859A-8E8DEDB659AB","vid":"b840f6780cdd4039b765e1a7176a29c0","title":"н�ʶ���","id":"239","isFinish":true,"hitRule
+Info":[{"ruleName":"��Ƹ+���ι�ͨ+н�ʶ��ٿ��˵�1�����������","ruleComments":"������� ����н��˰ǰ ������ ˰��","scoreNumber":-1,"conversionScoreNumber":-4.35,"ri
+d":285},{"ruleName":"��Ƹ+���ι�ͨ+н�ʶ��ٿ��˵�2�������ս�������","ruleComments":"���ս� ���� 4279 ���� �ٷ�֮30","scoreNumber":-2,"conversionScoreNumber":-8.7,"r
+id":286},{"ruleName":"��Ƹ+���ι�ͨ+н�ʶ��ٿ��˵�3�����乫����ٷ�֮3��","ruleComments":"���乫���� �ٷ�֮3 ����н��","scoreNumber":-2,"conversionScoreNumber":-8.7, "rid":287}
+], "unHitRuleInfo":[]}, {"isAllQualityCheck": false, "taskId": "6D16B718-13A6-44C2-B95A-C74C7B12BB68", "vid": "42199becf7754a1a8944f1379df95d2e", "title": "����",
+"id": "241", "isFinish": true, "hitRuleInfo":[
+{"ruleName": "��Ƹ+���ι�ͨ+���㿼�˵㣨���ǣ�", "ruleComments": "����", "scoreNumber": -1, "conversionScoreNumber": -4.35, "rid": 292}
+], "unHitRuleInfo":[]}, {"isAllQualityCheck": false, "taskId": "805FA3EF-ED98-4224-BF86-D3F79422755A", "vid": "0971e41505a345f7b714378a381b8ac5", "title": "�õģ��ҿ���
+����","id":"242","isFinish":true,"hitRuleInfo":[{"ruleName":"��Ƹ+���ι�ͨ+�ҿ��ǿ��ǿ��˵㣨����ͨ���绰��","ruleComments":"���� ͨ���绰 ͨ�绰 �������","scoreNu
+mber":-1,"conversionScoreNumber":-4.35,"rid":291}],"unHitRuleInfo":[]}],"isFinish":true},"success":true,"code":"200","message":"successful"}
+
+
