@@ -8,11 +8,18 @@ CREATE TABLE `business_model` (
   `label`             VARCHAR(20)            NOT NULL
 );
 
+INSERT INTO `business_model` VALUES (1, 'General');
+INSERT INTO `business_model` VALUES (2, 'Renew');
+
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `category_id` BIGINT(20) PRIMARY KEY NOT NULL,
   `label`       VARCHAR(20)            NOT NULL
 );
+
+INSERT INTO `category` VALUES (1, 'All');
+INSERT INTO `category` VALUES (2, 'Pending');
+INSERT INTO `category` VALUES (3, 'Exception');
 
 DROP TABLE IF EXISTS `score_item`;
 CREATE TABLE `score_item` (
