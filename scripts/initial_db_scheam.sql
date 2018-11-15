@@ -49,26 +49,30 @@ CREATE TABLE `rule` (
 
 DROP TABLE IF EXISTS `keywords`;
 CREATE TABLE `keywords` (
-  `keywords_id` BIGINT(20) UNSIGNED NOT NULL PRIMARY KEY REFERENCES rule (rule_id),
-  `occurence`   VARCHAR(20)         NOT NULL,
-  `keywords`    VARCHAR(255)        NOT NULL
+  `keywords_id` BIGINT(20)   NOT NULL,
+  `occurence`   VARCHAR(20)  NOT NULL,
+  `keywords`    VARCHAR(255) NOT NULL,
+  FOREIGN KEY (`keywords_id`) REFERENCES rule (rule_id)
 );
 
 DROP TABLE IF EXISTS `regular_expression`;
 CREATE TABLE `regular_expression` (
-  `regular_expression_id` BIGINT(20) UNSIGNED NOT NULL PRIMARY KEY REFERENCES rule (rule_id),
-  `regular_expression`    VARCHAR(255)        NOT NULL
+  `regular_expression_id` BIGINT(20)   NOT NULL,
+  `regular_expression`    VARCHAR(255) NOT NULL,
+  FOREIGN KEY (`regular_expression_id`) REFERENCES rule (rule_id)
 );
 
 DROP TABLE IF EXISTS `speed_detection`;
 CREATE TABLE `speed_detection` (
-  `speed_detection_id`  BIGINT(20) UNSIGNED NOT NULL PRIMARY KEY REFERENCES rule (rule_id),
-  `max_word_per_minute` SMALLINT(6) DEFAULT NULL
+  `speed_detection_id`  BIGINT(20) NOT NULL,
+  `max_word_per_minute` SMALLINT(6) DEFAULT NULL,
+  FOREIGN KEY (`speed_detection_id`) REFERENCES rule (rule_id)
 );
 
 DROP TABLE IF EXISTS `interrupt`;
 CREATE TABLE `interrupt` (
-  `interrupt_id`     BIGINT(20) UNSIGNED NOT NULL PRIMARY KEY REFERENCES rule (rule_id),
+  `interrupt_id`     BIGINT(20) NOT NULL,
   `overlap_time_sec` SMALLINT(6) DEFAULT NULL,
-  `overlap_char_qty` SMALLINT(6) DEFAULT NULL
+  `overlap_char_qty` SMALLINT(6) DEFAULT NULL,
+  FOREIGN KEY (`interrupt_id`) REFERENCES rule (rule_id)
 );
