@@ -4,8 +4,8 @@ USE sca;
 
 DROP TABLE IF EXISTS `business_model`;
 CREATE TABLE `business_model` (
-  `business_model_id` BIGINT(20) PRIMARY KEY NOT NULL,
-  `label`             VARCHAR(20)            NOT NULL
+  `business_model_id` BIGINT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `label`             VARCHAR(20)                           NOT NULL
 );
 
 INSERT INTO `business_model` VALUES (1, 'General');
@@ -13,8 +13,8 @@ INSERT INTO `business_model` VALUES (2, 'Renew');
 
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
-  `category_id` BIGINT(20) PRIMARY KEY NOT NULL,
-  `label`       VARCHAR(20)            NOT NULL
+  `category_id` BIGINT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `label`       VARCHAR(20)                           NOT NULL
 );
 
 INSERT INTO `category` VALUES (1, 'All');
@@ -23,29 +23,28 @@ INSERT INTO `category` VALUES (3, 'Exception');
 
 DROP TABLE IF EXISTS `score_item`;
 CREATE TABLE `score_item` (
-  `score_item_id` BIGINT(20) PRIMARY KEY NOT NULL,
-  `label`         VARCHAR(20)            NOT NULL
+  `score_item_id` BIGINT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `label`         VARCHAR(20)                           NOT NULL
 );
 
 DROP TABLE IF EXISTS `sub_score_item`;
 CREATE TABLE `sub_score_item` (
-  `sub_score_item_id` BIGINT(20) PRIMARY KEY NOT NULL,
-  `score_item_id`     BIGINT(20)             NOT NULL REFERENCES score_item (score_item_id),
-  `label`             VARCHAR(20)            NOT NULL,
-  `score`             SMALLINT(6)            NOT NULL
+  `sub_score_item_id` BIGINT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `score_item_id`     BIGINT(20)                            NOT NULL REFERENCES score_item (score_item_id),
+  `label`             VARCHAR(20)                           NOT NULL,
+  `score`             SMALLINT(6)                           NOT NULL
 );
 
 DROP TABLE IF EXISTS `rule`;
 CREATE TABLE `rule` (
-  `rule_id`           BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `rule_name`         VARCHAR(255)        NOT NULL,
-  `business_model_id` BIGINT(20)                   DEFAULT NULL REFERENCES business_model (business_model_id),
-  `category_id`       BIGINT(20)                   DEFAULT NULL REFERENCES category (category_id),
-  `effective_time`    VARCHAR(20)                  DEFAULT NULL,
-  `assessment_points` VARCHAR(225)        NOT NULL,
-  `sub_score_item_id` BIGINT(20)                   DEFAULT NULL REFERENCES sub_score_item (sub_score_item_id),
-  `rule_type`         VARCHAR(10)         NOT NULL,
-  PRIMARY KEY (`rule_id`)
+  `rule_id`           BIGINT(20)   NOT NULL PRIMARY KEY  AUTO_INCREMENT,
+  `rule_name`         VARCHAR(255) NOT NULL,
+  `business_model_id` BIGINT(20)                         DEFAULT NULL REFERENCES business_model (business_model_id),
+  `category_id`       BIGINT(20)                         DEFAULT NULL REFERENCES category (category_id),
+  `effective_time`    VARCHAR(20)                        DEFAULT NULL,
+  `assessment_points` VARCHAR(225) NOT NULL,
+  `sub_score_item_id` BIGINT(20)                         DEFAULT NULL REFERENCES sub_score_item (sub_score_item_id),
+  `rule_type`         VARCHAR(10)  NOT NULL
 );
 
 DROP TABLE IF EXISTS `keywords`;
